@@ -8,12 +8,8 @@ module OmniAuth
       option :name, 'fixotp'
 
       option :client_options,
-             site: 'https://sandbox.fix.network/',
-             #site: 'https://fix.network/',
-             # site: 'http://localhost:3001/',
-             # authorize_url: 'oauth2/authorize',
+             site: 'https://fix.network/',
              authorize_url: 'oauth/authorize',
-             # token_url: 'oauth2/token'
              token_url: 'oauth/token'
 
       option :authorize_options, %i[scope permissions]
